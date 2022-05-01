@@ -1,17 +1,88 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="INICIO" ></ion-back-button>
+    </ion-buttons>
+
     <ion-title>
-      Tab 2
+      Modelos
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="../tab3">
+        <ion-icon slot="icon-only" name="map-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content>
+  <h1><b>Nuestros Vehiculos</b></h1>
+ <h4>Nuestra gama de Vehiculos</h4>
+ <ion-list>
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        <img src="/assets/Imagenes/glc_coupe.jpg">
+        <ion-card-subtitle>Nuevos Lanzamientos</ion-card-subtitle>
+        <ion-card-title>GLC COUPÉ</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Desde $1,268,900 MXN
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        <img src="/assets/Imagenes/clase_g.jpg">
+        <ion-card-subtitle>Nuevos Lanzamientos</ion-card-subtitle>
+        <ion-card-title>CLASE G</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Desde $3,767,900 MXN
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        <img src="/assets/Imagenes/clase_c.jpg">
+        <ion-card-subtitle>Nuevos Lanzamientos</ion-card-subtitle>
+        <ion-card-title>CLASE C SEDÁN</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Desde $1,028,900 MXN
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        <img src="/assets/Imagenes/clase_a.jpg">
+        <ion-card-subtitle>Nuevos Lanzamientos</ion-card-subtitle>
+        <ion-card-title>CLASE A HATCHBACK</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Desde $794,900 MXN
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        <img src="/assets/Imagenes/cla_coupe.jpg">
+        <ion-card-subtitle>Nuevos Lanzamientos</ion-card-subtitle>
+        <ion-card-title>CLA COUPÉ</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Desde $825,900 MXN
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-list>
 </ion-content>

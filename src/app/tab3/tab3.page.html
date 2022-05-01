@@ -1,17 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Inicio" ></ion-back-button>
+    </ion-buttons>
     <ion-title>
-      Tab 3
+      Donde nos ubicamos
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="../tab4">
+        <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>Agencia</ion-col>
+      <ion-col><b>Mercedes-Benz Culiacán</b> <br>Blvd Pedro Infante 2995
+        Culiacan, SIN, 80020<br><img src="/assets/Tablas/culiacan.jpg"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Agencia</ion-col>
+      <ion-col><b>Mercedes-Benz Palmas Mazatlán</b> <br>Ave. Rafael Buelna No. 125. Col. Lomas de Mazatlan
+        Mazatlán, SIN, 82110<br><img src="/assets/Tablas/palmas.jpg"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Agencia</ion-col>
+      <ion-col><b>Mercedes-Benz Natsa La Paz</b> <br>Isabel La Católica 1315
+        La Paz, BCS, 23000<br><img src="/assets/Tablas/natsa.jpg"></ion-col>
+    </ion-row>
+  </ion-grid>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-fab vertical="bottom" horizontal="end" edge slot="fixed">
+    <ion-fab-button href="https://www.mercedes-benz.com.mx/es/dealers/searchLocation-80290/searchByType-zip/filter-mbdealer">
+      <ion-icon name="navigate-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

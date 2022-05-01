@@ -1,17 +1,38 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      INICIO
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="../tab2">
+        <ion-icon slot="icon-only" name="car-sport-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <img src="/assets/Imagenes/prueba2.jpg">
+      <ion-card-subtitle>Nuevos Lanzamientos</ion-card-subtitle>
+      <ion-card-title>EQC</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Presentamos la nueva SUV de Mercedes-EQ. No es solo una pionera por el hecho de contar con propulsión 100% 
+      eléctrica. Su técnica convence en toda la línea. Dos potentes motores eléctricos y la tracción
+       integral 4MATIC se encargaran de satisfacer los deseos de propulsión.
+    </ion-card-content>
+  </ion-card>
+
+   <ion-button color="dark" routerLink="../tab2">Ver Modelos</ion-button>
+ 
 </ion-content>
+
+        
+
+
